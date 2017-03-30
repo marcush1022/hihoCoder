@@ -41,15 +41,16 @@ int main(){
 	while(getline(cin,str)) {
 		string str1="";
         int j = 0;
-        for(int i = 0; i < str.size(); i++) {
-			if(check(i,str)) {{
-				str1=str1+change;
-                i= i + 8;
-			}
-			}
-			else str1=str1+str[i];
+        for(int i = 0; i < str.size(); i++) 
+	{
+		if(check(i,str)) 
+		{
+			str1=str1+change;
+               	 	i= i + 8;
 		}
-		cout<<str1<< endl;
-}
- return 0 ;
+		else str1=str1+str[i];
+	}
+	cout<<str1<< endl;
+	}
+	return 0 ;
 }
