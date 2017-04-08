@@ -34,39 +34,40 @@ bool judge60(string &str)
 	{
 	    
 		if(str[i]=='A')
-        {
-            countA++;
-            countL=0;
-        }
+        	{
+            		countA++;
+            		countL=0;
+        	}
 		else if(str[i]=='L')
-        {
-            countL++;
-            if(countL==3)
-                countA=2;
-        }
-        else
-        {
-            countL=0;
-        }
+        	{
+            		countL++;
+            		if(countL==3)
+                		countA=2;
+        	}
+        	else
+        	{
+            		countL=0;
+        	}
 
 	}
 	if(countA>=2)
-        return false;
-    else
-        return true;
+        	return false;
+    	else
+        	return true;
 }
 
 int main(){
 	string str;
 	int it;
 	cin>>it;
-	while(it) {
-        cin>>str;
-        if(judge60(str))
-            puts("YES");
-        else
-            puts("NO");
-        it--;
+	while(it) 
+	{
+        	cin>>str;
+        	if(judge60(str))
+            		puts("YES");
+        	else
+            		puts("NO");
+        	it--;
 	}
 	return 0 ;
 }
